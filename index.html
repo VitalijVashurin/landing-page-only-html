@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мой первый сайт</title>
+    <style>
+      html,
+      body,
+      p {
+        padding: 0;
+        margin: 0;
+      }
+
+      .new-font {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+      }
+
+      h1 {
+        font-size: 40px;
+        margin-top: 0;
+      }
+
+      h2 {
+        color: black;
+        font-size: 36px;
+      }
+      .bold-text {
+        font-weight: bold;
+      }
+
+      .cyan-text {
+        color: #00ecbb;
+      }
+      .white-text {
+        color: white;
+      }
+
+      .gray-text {
+        color: #433a5e;
+      }
+
+      .purple {
+        background: #6a13eb;
+      }
+
+      .block1 {
+        width: 980px;
+        margin: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .block1.no-padding-top {
+        padding-top: 0;
+      }
+      .nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        align-items: center;
+        font-size: 20px;
+      }
+
+      .exp {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .exp li {
+        margin: 15px 0;
+      }
+
+      .nav li {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        cursor: pointer;
+      }
+
+      .nav li a {
+        text-decoration: none;
+        color: #00ecbb;
+      }
+
+      .achievemnts {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+      }
+      .achievemnts li {
+        background: url("./icon-ok.png") no-repeat left center;
+        padding-left: 90px;
+        padding-top: 23px;
+        margin: 20px 0;
+      }
+
+      .str-point {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        column-count: 2;
+      }
+
+      .str-point li {
+        background: url("./icon-ok-2.png") no-repeat left center;
+        padding-left: 90px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin: 30px 0;
+        margin-top: 0;
+      }
+      .logo-img {
+        width: 980px;
+      }
+
+      .name-tag {
+        font-size: 30px;
+        letter-spacing: 10px;
+      }
+
+      .paragraph {
+        margin: 20px 0;
+        font-size: 18px;
+        line-height: 30px;
+      }
+
+      .hands-bg {
+        background-image: url("./credo-bg.png");
+        background-position: center;
+        background-size: cover;
+        padding-bottom: 30px;
+        font-size: 24px;
+      }
+
+      .circle-img {
+        border-radius: 50%;
+      }
+      .img-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+      #contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+      }
+
+      #contact-form input,
+      textarea {
+        padding: 20px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: bold;
+
+        outline: none;
+        width: 934px;
+        border: none;
+        border: 3px solid #00ecbb;
+      }
+      #contact-form textarea {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        height: 100px;
+      }
+
+      input#submit {
+        width: 350px;
+        cursor: pointer;
+        background: #00ecbb;
+        color: #6a13eb;
+        font-size: 24px;
+      }
+      #top {
+        width: 74px;
+        height: 74px;
+        border: 2px solid #00ecbb;
+        background: #00ecbb;
+        text-align: center;
+        position: fixed;
+        padding: 4px 5px;
+        bottom: 88px;
+        right: 60px;
+
+        cursor: pointer;
+        color: #6a13eb;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .logo-container {
+        width: 980px;
+        height: 547px;
+
+        background-image: url("./Моё фото.png");
+        background-size: cover;
+        box-shadow: 0px -120px 50px 0px rgba(0, 0, 0, 0.8) inset;
+      }
+
+      .text-overlap {
+        position: relative;
+        padding: 0 60px;
+        top: -110px;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body class="gray-text new-font">
+    <div>
+      <div class="purple">
+        <div class="block1" id="navigation">
+          <ul class="cyan-text nav" style="padding-top: 20px">
+            <li>
+              <span class="bold-text cyan-text name-tag"
+                >ВИТАЛИЙ <br />
+                ВАШУРИН</span
+              >
+            </li>
+            <li><a href="#experience">Опыт работы</a></li>
+            <li><a href="#achievemnts">Достижения</a></li>
+            <li><a href="#strong">Сильные стороны</a></li>
+            <li><a href="#private">Личное</a></li>
+            <li><a href="#contact"> Контакты</a></li>
+          </ul>
+
+          <div class="logo-container"></div>
+          <p class="white-text paragraph text-overlap">
+            Мне 21 год. Я закончил Киевский коледж компьютерных технологий по
+            специальности инженер программист, в данный момент интересна
+            Frontend разработка так как вижу перспективу в этом направлении.
+          </p>
+
+          <h1 class="white-text deviz">От продажника до Веб разработчика!</h1>
+        </div>
+      </div>
+
+      <div class="block1 no-padding-top" id="experience">
+        <h2>Опыт работы</h2>
+
+        <ol class="exp">
+          <li>
+            <span class="bold-text">Ноябрь 2016 - Май 2017 </span>- официант
+            ресторан Il Molino
+          </li>
+          <li>
+            <span class="bold-text">Июнь 2019 - август 2019 </span> - Мененджер
+            по продажам Glad 2 Trade
+          </li>
+          <li>
+            <span class="bold-text">Cентябрь 2019 - ноябрь 2021 </span> -
+            специалист с продаж и обслуживания Vodafone
+          </li>
+        </ol>
+      </div>
+
+      <div class="block1 no-padding-top" id="achievemnts">
+        <h2>Мои Достижения</h2>
+
+        <p>Главные профисиональные Достижения за последние годы:</p>
+
+        <ul class="achievemnts">
+          <li>
+            <span class="bold-text"
+              >Завершил електронный курс HTML,CSS BrainsCloud</span
+            >
+          </li>
+          <li><span class="bold-text">Начал изучать английский язык</span></li>
+          <li>
+            <span class="bold-text">Начал изучать курс Frontend ITEA</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="block1 no-padding-top" id="strong">
+        <h2>Мои сильные стороны</h2>
+
+        <ul class="str-point">
+          <li>Амбициозный</li>
+          <li>Внимательный</li>
+          <li>Стрессоустойчивый</li>
+          <li>Комуникабельный</li>
+          <li>Усидчивый</li>
+          <li>Легко обучаюсь</li>
+          <li>Целеустремлённый</li>
+          <li>Хорошо лью воду</li>
+        </ul>
+      </div>
+
+      <div class="hands-bg">
+        <div class="block1">
+          <h2 class="white-text">Мой принцип работы</h2>
+          <p class="white-text">
+            << Никогда не сдавайся - позорься до конца.>>
+          </p>
+        </div>
+      </div>
+
+      <div class="block1" id="private">
+        <h2>Личное</h2>
+        <p class="paragraph">
+          На сегодняшний день хочу стать не скучным Frontend разработчиком.
+          Закончил Киевский коледж компьютерных технологий и начал заниматься
+          саморазвитием. Люблю активный отдых,проводить время с близкими людьми.
+        </p>
+        <div class="img-container">
+          <img
+            class="circle-img"
+            src="./img/personal-img-1.png"
+            alt="picture 1"
+          />
+          <img
+            class="circle-img"
+            src="./img/personal-img-2.png"
+            alt="picture 2"
+          />
+          <img
+            class="circle-img"
+            src="./img/personal-img-3.png"
+            alt="picture 3"
+          />
+        </div>
+      </div>
+
+      <div class="block1 no-padding-top" id="contact">
+        <h2>Контакт</h2>
+        <form action="/" method="post" id="contact-form">
+          <input type="text" name="FIO" placeholder="Ф.И.О" />
+          <input type="email" name="emeil" placeholder="Email" />
+          <textarea name="message" placeholder="Сообщение"></textarea>
+          <input type="submit" name="button" value="Отправить" id="submit" />
+        </form>
+        <a href="#navigation" id="top">&uarr;</a>
+      </div>
+    </div>
+  </body>
+</html>
